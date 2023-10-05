@@ -1,8 +1,6 @@
-"""CS 108 Final Project
+"""A recreation of Conway's Game of Life
 
-A recreation of Conway's Game of Life
-
-@author: Palmer Ford (pjf5)
+@author: Palmer Ford 
 @date: fall, 2021
 """
 

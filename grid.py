@@ -1,8 +1,6 @@
-"""CS 108 Final Project
+"""Model for Conway's Game of Life
 
-Model for Conway's Game of Life
-
-@author: Palmer Ford (pjf5)
+@author: Palmer Ford 
 @date: fall, 2021
 """
 
@@ -15,7 +13,6 @@ class Grid:
         """Instantiate a grid object."""
         self.grid = grid
         
-        
     def __str__(self):
         """Returns a printable version of the grid."""
         grid_str = ''
@@ -27,7 +24,6 @@ class Grid:
                 grid_str = grid_str + str(column_index)
                 
         return grid_str
-        
         
     def next_gen(self):
         """Takes the current nested list of cells and returns the next generation."""
@@ -60,7 +56,6 @@ class Grid:
         return new_grid
         
         
-        
 class Cell:
     """Cell models a single cell object that may be instantiated to a grid."""
 
@@ -71,11 +66,9 @@ class Cell:
         self.side = side
         self.status = status
         
-        
     def __str__(self):
         """Returns a printable '0' or '1' depending on the status of the cell."""
         return str(self.status)
-        
         
     def is_clicked(self, x, y):
         """Returns whether a point is inside the bounds of the cell object."""

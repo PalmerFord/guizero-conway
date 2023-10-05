@@ -1,8 +1,6 @@
-"""CS 108 Final Project
+"""Assert tests for Conway's Game of Life
 
-Assert tests for Conway's Game of Life
-
-@author: Palmer Ford (pjf5)
+@author: Palmer Ford 
 @date: fall, 2021
 """
 
@@ -23,7 +21,6 @@ expected_grid = Grid([[Cell(status=0), Cell(status=0), Cell(status=0), Cell(stat
 grid.grid = grid.next_gen()
 # Checks to make sure standard cell formations behave properly
 assert (str(grid) == str(expected_grid))
-
 
 grid = Grid([[Cell(status=1), Cell(status=0), Cell(status=0), Cell(status=0), Cell(status=1)],
              [Cell(status=0), Cell(status=0), Cell(status=0), Cell(status=0), Cell(status=0)],
